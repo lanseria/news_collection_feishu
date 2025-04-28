@@ -26,6 +26,7 @@ pip install -e .
 
 ```bash
 cli hello [name]
+cli fetch-news
 ```
 
 ## Development
