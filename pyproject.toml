@@ -11,7 +11,7 @@ requires-python = "<3.13"
 license = "MIT"
 keywords = []
 authors = [
-  { name = "lanseria", email = "your-email@example.com" },
+  { name = "lanseria", email = "zhangchao564265135@hotmail.com" },
 ]
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -32,12 +32,18 @@ dependencies = [
 test = [
   "pytest>=7.0.0",
 ]
-build = [
-  "pyinstaller>=6.3.0",
-]
-
 [project.scripts]
 cli = "news_collection_feishu.main:app"
+
+
+# Hatchling 特定配置
+[tool.hatch.version]
+path = "src/news_collection_feishu/__init__.py"
+
+# 添加 hatch 包配置
+[tool.hatch.packages.find]
+include = ["src/*"]
+src = "src"
 
 [tool.pytest.ini_options]
 addopts = "-ra -q"
