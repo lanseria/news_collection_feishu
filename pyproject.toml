@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "python-cli-starter"
+name = "news-collection-feishu"
 dynamic = ["version"]
-description = "Python CLI Starter Template"
+description = "News Collection Feishu CLI"
 readme = "README.md"
 requires-python = "<3.13"
 license = "MIT"
@@ -37,16 +37,7 @@ build = [
 ]
 
 [project.scripts]
-cli = "python_cli_starter.main:app"
-
-# Hatchling 特定配置
-[tool.hatch.version]
-path = "src/python_cli_starter/__init__.py"
-
-# 添加 hatch 包配置
-[tool.hatch.packages.find]
-include = ["src/*"]
-src = "src"
+cli = "news_collection_feishu.main:app"
 
 [tool.pytest.ini_options]
 addopts = "-ra -q"

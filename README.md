@@ -1,4 +1,4 @@
-# Python CLI Starter Template
+# News Collection Feishu
 
 A minimal Python command-line application template using Typer and Rich.
 
@@ -39,7 +39,7 @@ pytest
 
 ```
 src/
-  python_cli_starter/
+  news_collection_feishu/
     __init__.py    # Package initialization
     cli.py         # CLI commands
     main.py        # App entry point
